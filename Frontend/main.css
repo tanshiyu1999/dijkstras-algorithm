@@ -1,12 +1,32 @@
 :root {
-  --main-color: #854E2A;
-  --bg-warm: #FFE7D6;
-  --bg-cool: #97C9CC;
-  --main-warm: #CC9B7A;
-  --main-cool: #337B80;
+  --main-color: hsl(23, 52%, 16%);/* Default Text Color */
+  --bg-warm: hsl(25, 100%, 94%);   /* Default Background Color */
+  --bg-cool: #97C9CC;   /* Unactivated Boxes Color */
+  --main-warm: #CC9B7A; /* Route Color */
+  --main-cool: #337B80; /* Activated Boxes Color */
 }
 
+@font-face {
+  font-family: roboto-slab;
+  src: url(fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+  font-family: roboto-slab;
+  src: url(fonts/RobotoSlab-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: roboto-slab;
+  src: url(fonts/RobotoSlab-Light.ttf);
+  font-weight: 300;
+}
 
 body {
-  font-family: sans-serif;
+  font-family: roboto-slab;
+  background-color: var(--bg-warm);
+  color: var(--main-color);
+}
+
+body .heading {
+  font-weight: bold;
 }
