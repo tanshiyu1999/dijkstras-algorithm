@@ -1,47 +1,11 @@
-// Setup
-var contacts = [
-    {
-        "firstName": "Akira",
-        "lastName": "Laine",
-        "number": "0543236543",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-    },
-    {
-        "firstName": "Harry",
-        "lastName": "Potter",
-        "number": "0994372684",
-        "likes": ["Hogwarts", "Magic", "Hagrid"]
-    },
-    {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
-        "number": "0487345643",
-        "likes": ["Intriguing Cases", "Violin"]
-    },
-    {
-        "firstName": "Kristian",
-        "lastName": "Vos",
-        "number": "unknown",
-        "likes": ["JavaScript", "Gaming", "Foxes"]
-    }
-];
+var arr = [5,4,3,2,1]
 
 
-function lookUpProfile(name, prop){
-// Only change code below this line
-  for(var i = 0; i < contacts.length; i++) {
-      var dict = contacts[i];
-      if (dict['firstName'] != name) {
-        continue
-      } else if (dict.hasOwnProperty(prop)) {
-        return dict[prop];
-      } else {
-        return "No such property";
-      }
-      }
 
-      return "No such contact"
-  }
+var hi = 1
 
+hi++
 
-lookUpProfile("Akira", "likes");
+console.log(hi)
+
+console.log(arr[6])

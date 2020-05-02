@@ -38,27 +38,21 @@ function dijkstra(y1 = 2, x1 = 1, y2 = 2, x2 = 3) {
     var j = getIndexOfK(plane, found[int])[1];
 
 
-    if (plane[i+ 1][j] != undefined) { //down
-      if (!(plane[i][j] in founded)) {
-        found.push(plane[i+1][j]);
-        console.log(plane[i+1][j]);
+    if (!(plane[i][j] in founded)) {
+      if (plane[i+ 1][j] != undefined) { //down
+          found.push(plane[i+1][j]);
+          console.log(plane[i+1][j]);
       }
-    }
-    if (plane[i-1][j] != undefined) { //up
-      if (!(plane[i][j] in founded)) {
-        found.push(plane[i-1][j]);
+      if (plane[i-1][j] != undefined) { //up
+          found.push(plane[i-1][j]);
       }
-    }
-    if (plane[i][j+1] != undefined) { //right
-      if (!(plane[i][j] in founded)) {
-        found.push(plane[i][j+1]);
+      if (plane[i][j+1] != undefined) { //right
+          found.push(plane[i][j+1]);
       }
-    }
-    if (plane[i][j-1] != undefined) { //left
-      if (!(plane[i][j] in founded)) {
-        found.push(plane[i][j-1]);
+      if (plane[i][j-1] != undefined) { //left
+          found.push(plane[i][j-1]);
+        }
       }
-    }
     founded.push(plane[i][j])
   }
 }
