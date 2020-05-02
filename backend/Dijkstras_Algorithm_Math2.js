@@ -39,7 +39,7 @@ function dijkstra(y1 = 2, x1 = 1, y2 = 2, x2 = 3) {
 
 
     if (!(plane[i][j] in founded)) {
-      if (plane[i+ 1][j] != undefined) { //down
+      if (plane[i+1][j] != undefined) { //down
           found.push(plane[i+1][j]);
           console.log(plane[i+1][j]);
       }
