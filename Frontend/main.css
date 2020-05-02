@@ -1,3 +1,12 @@
+:root {
+  --main-color: #854E2A;
+  --bg-warm: #FFE7D6;
+  --bg-cool: #97C9CC;
+  --main-warm: #CC9B7A;
+  --main-cool: #337B80;
+}
+
+
 body {
   font-family: sans-serif;
 }
