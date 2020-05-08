@@ -18,9 +18,6 @@
     <div id="app">
       <p v-on:click="clickChange">{{ message }}</p>
     </div>
-    <div class="">
-      <p>Main Visualisation</p>
-    </div>
   </main>
 
   <hr noshade size="1">
@@ -32,25 +29,5 @@
 
 
 
-  <script type="text/javascript">
-    new Vue ({
-      el: "#app",
-      data: {
-        message: "Keep clicking me to change me!"
-      },
-      methods: {
-        clickChange() {
-          if (this.message == "Keep clicking me to change me!") {
-            this.message = "Chocolate Pudding!";
-          } else if (this.message == "Chocolate Pudding!") {
-            this.message = "Vue is cool!";
-          } else if (this.message == "Vue is cool!") {
-            this.message = "I'm having a lot of fun!";
-          } else {
-            this.message = "Keep clicking me to change me!";
-          }
-        }
-      }
-    })
-  </script>
+  <script type="text/javascript" src="main.js"></script>
 </body>

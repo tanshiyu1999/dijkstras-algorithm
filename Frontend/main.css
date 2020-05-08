@@ -34,3 +34,9 @@ h1 {
 h2 {
   font-size: 1.2em;
 }
+
+.testClass {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
