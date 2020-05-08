@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<<head>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 </head>
 
 
+<body>
+  <main>
+    <header>
+      <title>Dijkstra's Algorithm</title>
+      <h1><span style="font-weight: 300;">Dijkstra's Algorithm, </span>Visualised.</h1>
+    </header>
+    <div>
+      <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at feugiat urna, sit amet accumsan neque. Donec placerat blandit justo sit amet imperdiet. Vestibulum tortor est, imperdiet eu turpis id, mattis consequat orci. Aenean non lectus eget nisl tincidunt posuere vel auctor risus. Mauris sagittis nisi id odio condimentum, sit amet bibendum urna porta. Duis quis suscipit sapien, nec imperdiet mi. Pellentesque sem orci, ullamcorper vitae hendrerit et, sagittis sed dui. Donec egestas erat cursus, placerat lectus non, lacinia ante. Maecenas ullamcorper arcu neque, in sagittis ex faucibus ut.</p>
+    </div>
+    <div id="app">
+      <p v-on:click="clickChange">{{ message }}</p>
+    </div>
+    <div class="">
+      <p>Main Visualisation</p>
+    </div>
+  </main>
+
+  <hr noshade size="1">
+  <footer>
+  <h2>Useful Links</h2>
+  <a href="https://github.com/tanshiyu1999/dijkstras-algorithm">Github</a>
+  </footer>
 
 
-<main>
-  <header>
-    <title>Djikstra's Algorithm</title>
-  </header>
-  <h2>Hello World</h2>
 
 
-</main>
-
-
-
-
-<footer>
-
-</footer>
+  <script type="text/javascript">
+    new Vue ({
+      el: "#app",
+      data: {
+        message: "Keep clicking me to change me!"
+      },
+      methods: {
+        clickChange() {
+          if (this.message == "Keep clicking me to change me!") {
+            this.message = "Chocolate Pudding!";
+          } else if (this.message == "Chocolate Pudding!") {
+            this.message = "Vue is cool!";
+          } else if (this.message == "Vue is cool!") {
+            this.message = "I'm having a lot of fun!";
+          } else {
+            this.message = "Keep clicking me to change me!";
+          }
+        }
+      }
+    })
+  </script>
+</body>

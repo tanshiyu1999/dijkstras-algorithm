@@ -28,36 +28,38 @@ function dijkstra(y1 = 2, x1 = 1, y2 = 2, x2 = 3) {
 
   var beginning = plane[y1][x1];
   var ending = plane[y2][x2];
+
   var found = [beginning];
+
   var founded = [];
-  var plot = [];
-  for (var int = 0; !(ending in found); int++ ) { //have yet done the wall thingy.
+
+  for (var int = 0; !(ending in found); int++ ) {
     var i = getIndexOfK(plane, found[int])[0];
     var j = getIndexOfK(plane, found[int])[1];
-    if (!(plane[i][j] in founded)) {
-      if (plane[i+1][j] != undefined) { //down
-        if (!(plane[i+1][j] in found)) {
-          found.push(plane[i+1][j]);
-          console.log(plane[i+1][j]);
-        }
-      }
-      if (plane[i-1][j] != undefined) { //up
-        if (!(plane[i-1][j] in found)) {
-          found.push(plane[i-1][j]);
-        }
-      }
-      if (plane[i][j+1] != undefined) { //right
-        if (!(plane[i][j+1] in found)) {
-          found.push(plane[i][j+1]);
-        }
-      }
-      if (plane[i][j-1] != undefined) { //left
-        if (!(plane[i][j-1] in found)) {
-          found.push(plane[i][j-1]);
-        }
+
+
+    if (plane[i+ 1][j] != undefined) { //down
+      if (!(plane[i][j] in founded)) {
+        found.push(plane[i+1][j]);
+        console.log(plane[i+1][j]);
       }
     }
-    founded.push(plane[i][j]);
+    if (plane[i-1][j] != undefined) { //up
+      if (!(plane[i][j] in founded)) {
+        found.push(plane[i-1][j]);
+      }
+    }
+    if (plane[i][j+1] != undefined) { //right
+      if (!(plane[i][j] in founded)) {
+        found.push(plane[i][j+1]);
+      }
+    }
+    if (plane[i][j-1] != undefined) { //left
+      if (!(plane[i][j] in founded)) {
+        found.push(plane[i][j-1]);
+      }
+    }
+    founded.push(plane[i][j])
   }
 }
 
