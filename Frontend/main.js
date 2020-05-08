@@ -4,3 +4,5 @@ var test = new Vue ({
     box: "Hello Vue!"
   }
 })
+
+var imTestingSomething;
