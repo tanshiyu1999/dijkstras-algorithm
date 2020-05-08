@@ -16,7 +16,8 @@ new Vue ({
       }
     }
   }
-
 })
 
 var imTestingSomething;
+
+var imTestingSomethingToo;
