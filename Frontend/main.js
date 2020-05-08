@@ -16,4 +16,10 @@ new Vue ({
       }
     }
   }
+<<<<<<< HEAD
 });
+=======
+})
+
+var imTestingSomething;
+>>>>>>> 2bbca32ae2d96f0b8c3c113858e8a2dc111d0743
