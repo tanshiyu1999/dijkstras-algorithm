@@ -16,9 +16,7 @@ new Vue ({
       }
     }
   }
-<<<<<<< HEAD
-});
-=======
+
 })
 
 var imTestingSomething;
